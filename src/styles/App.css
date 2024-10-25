@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: rgb(3, 0, 31);
+  background: rgb(10, 6, 44);
   color: white;
 }
 
@@ -18,17 +18,62 @@ body {
   display: flex;
 }
 
-.sideBar {
-  flex: 3;
-  border-right: 1px solid rgb(100, 100, 100);
+.main {
+  min-height: calc(100dvh - 14rem);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 6rem 10rem;
 }
 
-.logo {
+.inp {
+  padding: 0.5rem;
+  background: rgba(28, 30, 58, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.sendBtn {
+  width: auto;
+  height: 3rem;
+  background-color: black;
+}
+
+.addBtn {
+  width: auto;
+  height: 3rem;
+}
+
+.profilePic {
   margin: 1rem;
   width: auto;
-  height: 50px;
+  height: 4rem;
+  border-radius: 2rem;
 }
 
-.brand {
-  font: 10rem;
+.botProfilePic {
+  margin: 1rem;
+  width: auto;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: rgb(233, 147, 229);
+}
+
+.chat {
+  margin: 1rem;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.chats {
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 70rem;
+  height: calc(100dvh - 17rem);
+
 }

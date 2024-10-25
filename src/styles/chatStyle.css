@@ -1,0 +1,38 @@
+.messageCont {
+    display: flex;
+    flex-direction: column;
+}
+
+.userChat {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin: 0.5rem 0; /* Space between messages */
+}
+
+.messageText{
+    font-size: 1.5rem;
+}
+
+.userDP {
+    height: 6rem;
+    width: auto;
+    border-radius: 3rem;
+    margin-right: 1rem; /* Space between image and text */
+}
+
+.trollDP {
+    height: 6rem;
+    width: auto;
+    border-radius: 3rem;
+    margin-left: 1rem;
+}
+
+.messageText {
+    flex: 1; /* Allow text to take up available space */
+    word-wrap: break-word; /* Ensure long messages wrap properly */
+}
