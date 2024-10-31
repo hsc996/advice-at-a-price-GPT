@@ -1,10 +1,13 @@
 
-# Custom GPT bot
+# Advice At A Price
 
+## Custom GPT chatbot, created using the "Marv" AI assistant: a public API provided by OpenAI. This application is creacted using React, HTML and CSS with a Vite.js framework.
+
+```
 my-gpt-app/
 ├── public/
 │   ├── index.html
-│   └── favicon.ico
+│ 
 ├── src/
 │   ├── assets/                  # Static assets (images, icons, etc.)
 │   │   ├── images/
@@ -37,7 +40,7 @@ my-gpt-app/
 ├── .gitignore
 ├── package.json
 └── vite.config.js
-
+```
 
 # Styling
 

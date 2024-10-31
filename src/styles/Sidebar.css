@@ -55,3 +55,15 @@
 .brand {
     font-size: 2rem;
   }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+ul li {
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}

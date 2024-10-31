@@ -1,7 +1,22 @@
 import '../styles/Sidebar.css'
 import gptLogo from '../assets/gpt_logo.png';
+import { useState } from 'react';
+
+const navbar = [
+    "Home",
+    "Saved",
+    "Upgrade to Pro"
+]
 
 export function Sidebar(){
+
+    const [activeItem, setActiveItem] = useState(navbar[0]);
+
+    const handleItemClick = (item) => {
+        setActiveItem(item);
+    };
+
+
     return (
         <>
             <div className="Container">
@@ -23,20 +38,20 @@ export function Sidebar(){
                             </button>
                         </div>
                     </div>
-                    <div className="listItems">
-                        <img src="" alt="" className="listItemsImg" />
-                        Home
-                    </div>
-                    <div className="listItems">
-                        <img src="" alt="" className="listItemsImg" />
-                        Saved
-                    </div>
-                    <div className="listItems">
-                        <img src="" alt="" className="listItemsImg" />
-                        Upgrade to Pro
-                    </div>
+                    <ul>
+                        {
+                            navbar.map((navItem, index) => {
+                                return <li key={index} className={activeItem === navItem ? 'active': ''}>
+                                    <button onClick={() => handleItemClick(navItem)}>
+                                        {navItem}
+                                    </button>
+                                </li>;
+                            })
+                        }
+                    </ul>
                 </div>
             </div>
         </>
     );
 };
+

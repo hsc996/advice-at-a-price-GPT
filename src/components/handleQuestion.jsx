@@ -45,11 +45,11 @@ export function HandleQuestion(){
                         ))}
                     </div>
                 </div>
-                <div id="inputBox">
+                <div className="inputBox">
                     <input
                         type="text"
                         id="user-input"
-                        placeholder="Send a message"
+                        placeholder="    Send a message"
                         value={input}
                         onChange={(e) => {setInput(e.target.value)}}
                     />
