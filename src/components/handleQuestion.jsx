@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useChat } from "../contexts/ChatContextProvider";
-import { callMarvAPI } from "../APIserverconfig";
+import { callMarvAPI } from "../utils/API";
 import sendBtn from '../assets/send_icon.png';
 import '../styles/chatStyle.css'
 

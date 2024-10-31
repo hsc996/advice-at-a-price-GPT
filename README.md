@@ -1,7 +1,7 @@
 
 # Advice At A Price
 
-## Custom GPT chatbot, created using the "Marv" AI assistant: a public API provided by OpenAI. This application is creacted using React, HTML and CSS with a Vite.js framework.
+ Custom GPT chatbot, created using the "Marv" AI assistant: a public API provided by OpenAI. This application is creacted using React, HTML and CSS with a Vite.js framework.
 
 ```
 my-gpt-app/
@@ -9,10 +9,10 @@ my-gpt-app/
 │   ├── index.html
 │ 
 ├── src/
-│   ├── assets/                  # Static assets (images, icons, etc.)
+│   ├── assets/
 │   │   ├── images/
 │   │   └── icons/
-│   ├── components/              # Reusable components
+│   ├── components/
 │   │   ├── Chat/
 │   │   │   ├── ChatInput.jsx
 │   │   │   ├── ChatMessage.jsx
@@ -21,22 +21,22 @@ my-gpt-app/
 │   │   ├── Navbar/
 │   │   │   ├── Navbar.jsx
 │   │   │   └── Navbar.css
-│   │   └── ...                  # Other components
-│   ├── contexts/                # React contexts for global state
+│   │   └── ...                  
+│   ├── contexts/                
 │   │   ├── ChatContext.jsx
 │   │   └── UserContext.jsx
-│   ├── hooks/                   # Custom hooks
+│   ├── hooks/                   
 │   │   ├── useChat.js
 │   │   └── useAuth.js
-│   ├── styles/                  # Global styles
+│   ├── styles/                  
 │   │   ├── App.css
-│   │   └── variables.css        # CSS variables or theme
-│   ├── utils/                   # Utility functions
-│   │   ├── api.js               # API functions for OpenAI
+│   │   └── variables.css       
+│   ├── utils/                   
+│   │   ├── api.js               
 │   │   └── helpers.js
-│   ├── App.jsx                  # Main app component
-│   ├── main.jsx                 # Entry point for React
-│   └── index.css                # Global CSS file
+│   ├── App.jsx                  
+│   ├── main.jsx                 
+│   └── index.css               
 ├── .gitignore
 ├── package.json
 └── vite.config.js
