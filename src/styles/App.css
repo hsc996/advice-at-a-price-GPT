@@ -11,6 +11,7 @@ html {
 body {
   background: rgb(10, 6, 44);
   color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 .App {

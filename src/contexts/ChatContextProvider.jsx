@@ -11,9 +11,7 @@ export const useChat = () => {
 };
 
 export const ChatProvider = ({children}) => {
-    const [messages, setMessages] = useState([
-        {text: "Oh... it's you. What do you want?", isBot: true}
-    ]);
+    const [messages, setMessages] = useState([]);
 
     const displayMessage = (sender, msg) => {
         const profileImage = sender === "Marv" ? trollDP : selfDP;
