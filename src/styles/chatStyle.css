@@ -1,21 +1,27 @@
+/* Container for the messages */
 .messageCont {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
     padding: 50px;
-    height: 90dvh;
-    width: 100%;
+    height: calc(90dvh - 60px); /* Adjusted to account for the input box space at the bottom */
+    width: 80%; /* Center the chat display */
+    max-width: 800px; /* Optional: Set a max-width to prevent messages from stretching too wide */
+    margin: 0 auto; /* Center the chat container horizontally */
 }
 
+/* Container for the user's chat messages */
 .userChat {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
+/* Individual message styles */
 .message {
     display: flex;
     align-items: center;
-    max-width: 60%;
+    max-width: 100%; /* Allow the message to span across the screen */
     margin: 1rem 0;
     margin-bottom: 3rem;
 }
@@ -50,20 +56,30 @@
 
 /* Adjust the gap between image and message text */
 .userDP {
-    margin-right: 2rem; 
+    margin-right: 2rem;
 }
 
 .trollDP {
     margin-left: 2rem;
 }
 
+/* Input box container - center it horizontally and position it at the bottom */
 .inputBox {
     display: flex;
     align-items: center;
     padding: 1rem;
-    background-color:  #4A4A4A;
+    background-color: #4A4A4A;
+    position: fixed;
+    bottom: 1rem; /* Space from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the input box horizontally */
+    width: 80%; /* Adjust the width of the input box */
+    max-width: 600px; /* Optional max-width for larger screens */
+    border-radius: 10px; /* Rounded corners */
+    z-index: 10; /* Ensure it stays on top of the chat */
 }
 
+/* Input field styling */
 #user-input {
     flex: 1;
     padding: 1rem;
@@ -76,6 +92,7 @@
     margin-left: 1rem;
 }
 
+/* Send button styling */
 .send {
     margin-left: 1rem;
     cursor: pointer;
